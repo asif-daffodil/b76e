@@ -1,0 +1,3 @@
+Live Server - Alt + (l - o)
+Copy line - Alt + shift + down arrow
+multiple cursor - Alt + left-click

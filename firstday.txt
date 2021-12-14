@@ -1,0 +1,48 @@
+FrontEnd
+HTML-5
+CSS-3
+SASS/SCSS
+Bootstrap-5
+JavaScript
+jQuery
+
+BackEnd
+PHP
+OOP
+Ajax
+MySQLi
+
+laravel - CRUD with login-Registration
+
+Blog Site
+
+//software
+vscode
+
+Extension list
+Auto Rename Tag
+DotENV
+Duplicate action
+EditorConfig for VS Code
+HTML End Tag Labels
+Laravel Artisan
+Laravel Blade Snippets
+Laravel Extra Intellisense
+Laravel goto view
+Laravel Snippets
+laravel-goto-controller
+Live Sass Compiler
+PHP Debug
+PHP Intelephense
+PHP Namespace Resolver
+Prettier - Code formatter
+IntelliSense for CSS class names in HTML
+
+
+
+
+
+
+
+
+
