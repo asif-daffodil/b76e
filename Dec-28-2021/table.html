@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <!-- table>tr*5>td*7 -->
+    <table border="1" width="600" height="auto" align="center" cellspacing="0" cellpadding="5">
+        <!-- tr no 1 -->
+        <tr align="center">
+            <th colspan="2" bgcolor="lightblue">data</th>
+            <!-- <td>data</td> -->
+            <th>data</th>
+            <th rowspan="5" bgcolor="lightgreen">data</th>
+            <th>data</th>
+            <th colspan="2">data</th>
+            <!-- <td>data</td> -->
+        </tr>
+        <!-- tr no 2 -->
+        <tr align="center">
+            <td colspan="3">data</td>
+            <!-- <td>data</td>
+            <td>data</td> -->
+            <!-- <td>data</td> -->
+            <td colspan="3">data</td>
+            <!-- <td>data</td>
+            <td>data</td> -->
+        </tr>
+        <!-- tr no 3 -->
+        <tr align="center">
+            <td rowspan="2">data</td>
+            <td>data</td>
+            <td>data</td>
+            <!-- <td>data</td> -->
+            <td>data</td>
+            <td>data</td>
+            <td rowspan="2">data</td>
+        </tr>
+        <!-- tr no 4 -->
+        <tr align="center">
+            <!-- <td>data</td> -->
+            <td colspan="2" rowspan="2">data</td>
+            <!-- <td>data</td> -->
+            <!-- <td>data</td> -->
+            <td>data</td>
+            <td>data</td>
+            <!-- <td>data</td> -->
+        </tr>
+        <!-- tr no 5 -->
+        <tr align="center">
+            <td>data</td>
+            <!-- <td>data</td>
+            <td>data</td> -->
+            <!-- <td>data</td> -->
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <form action="">
+        <table align="center" width="600" bgcolor="skyblue">
+            <tr align="center">
+                <td colspan="3"><h2>Student Form</h2></td>
+            </tr>
+            <tr>
+                <td><label for=""> &nbsp; Name</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Your Name"></td>
+            </tr>
+            <tr>
+                <td><label for=""> &nbsp; Email</label></td>
+                <td>:</td>
+                <td><input type="email" placeholder="Email Address"></td>
+            </tr>
+            <tr>
+                <td><label for=""> &nbsp; phone</label></td>
+                <td>:</td>
+                <td><input type="number" placeholder="Phone Number"></td>
+            </tr>
+            <tr>
+                <td><label for=""> &nbsp; Gender</label></td>
+                <td>:</td>
+                <td>
+                    <input type="radio">Male
+                    <input type="radio">Female
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="reset">
+                    <input type="submit">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" height="20"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
