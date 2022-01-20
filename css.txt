@@ -1,0 +1,9 @@
+CSS - cascading style sheet
+
+inline CSS
+internal CSS
+external CSS
+
+selector
+
+proprty : value
