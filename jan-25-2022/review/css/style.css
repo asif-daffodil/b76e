@@ -18,14 +18,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
-    background-color: #ff0000;
+    background: #ff0000;
 }
 
 .eng > div {
     background: #fff;
 }
 
-.main > .color1, .main > .color2, .main > .color3, .main > .color4 {
+.color1, .color2, .color3, .color4 {
     width: 300px;
     height: 200px;
     margin: auto;
@@ -53,7 +53,7 @@
 }
 
 .color4 {
-    background: radial-gradient(#000, #fff, #0000ff)
+    background: radial-gradient(#000, #fff, #007ACC)
 }
 
 .coc2 {

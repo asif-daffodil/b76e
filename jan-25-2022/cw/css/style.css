@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img1, .img2, .img3 {
+    width: 200px;
+    position: relative;
+}
+
+.img1 {
+    top: 100px;
+    left: 100px;
+    z-index: 100;
+}
+
+.img2 {
+    top: 200px;
+    left: 0px;
+    z-index: 50;
+}
+
+.img3 {
+    top: 300px;
+    left: -100px;
+    z-index: 60;
+}
+
+.dhaka {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: #00ffff ;
+    margin: auto;
+}
+
+.dhanmondi {
+    width: 100px;
+    height: 100px;
+    background: #ffff00;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    transition: 0.5s;
+}
+
+.mohammadpur {
+    width: 100px;
+    height: 100px;
+    background: #ffff00;
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.dhaka:hover .dhanmondi {
+    top: 150px;
+    left: 150px;
+}
+
+.dhaka:hover .mohammadpur {
+    bottom: 150px;
+    right: 150px;
+}
