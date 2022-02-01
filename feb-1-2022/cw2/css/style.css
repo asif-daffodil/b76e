@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.main1::before {
+  content: "Hi...";
+}
+
+.main1::after {
+  content: "...";
+}
+
+.main2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.pain {
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  background: chartreuse;
+  position: relative;
+}
+
+.pain::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.pain::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+}
+
+.pain:hover::before {
+  left: -50%;
+}
+
+.pain:hover::after {
+  right: -50%;
+}
