@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("../images/switzerland.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px auto;
+    background-position: 50%; */
+    background: linear-gradient(to top right,rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.1), rgba(0, 0, 255, 0.5)), url("../images/switzerland.jpg") no-repeat 50% /500px auto;
+    /* background-image: linear-gradient(to top right,red, white, blue); */
+    /* background-image: radial-gradient(white, black); */
+}
+
+.gap {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/switzerland.jpg") no-repeat center /cover fixed;
+    /* background-attachment: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
