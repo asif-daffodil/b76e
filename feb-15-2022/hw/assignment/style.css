@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.findlandflag{
+    width: 500px;
+    height: 300px;
+    border: solid 1px black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+    background: blue;
+    margin-top: 100px;
+
+
+}
+div{
+    background: whitesmoke;
+}
+
+/* greeck flag */
+
+
+.greeceflag{
+    width: 500px;
+    height: 270px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    background: rgb(221, 223, 231);
+    position: relative;
+ }
+ 
+ 
+ .blue {
+    background: blue;
+ }
+
+ #small{
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    background-color: white;
+    top: 0px;
+    left:0px
+ }
+ #small> div{
+    background:blue;}
+
+    /* Bengium Flag Start */
+           .belgiummain{
+               width: 420px;
+               height: 300px;
+               display: flex;
+               margin: auto;
+               transition: 2s;
+               margin-bottom: 100px;
+               background: rebeccapurple;
+            
+           }
+           .belgiummain:hover{
+               transform: scale(1.2);
+
+           }
+           .belgium{
+            width: 420px;
+            height: 300px;
+            display: flex;
+            margin: auto;
+           }
+
+           .belgium1{
+               width: 140px;
+               height: 300px;
+               background: rgb(15, 15, 15);
+           }
+           .belgiun2{
+            width: 140px;
+            height: 300px;
+            background: rgb(233, 200, 13);
+        }
+
+        
+        .belgiun3{
+            width: 140px;
+            height: 300px;
+            background: rgb(218, 20, 20);
+        }
+
+        
+
+           
+         
+          /* France Flag Start*/
+      .francemain{
+        width: 420px;
+        height: 300px;
+        display: flex;
+        margin: auto;
+        transition: 2s;
+        margin-bottom: 100px;
+    }
+    .francemain:hover{
+        transform: scale(1.2);
+    }
+       .france{
+        width: 420px;
+        height: 300px;
+        margin-bottom: 100px;
+        display:flex;
+    }
+    
+    .france1{
+        width: 140px;
+        height: 300px;
+        background: rgb(6, 35, 161);
+    }
+
+    .france2{
+        width: 140px;
+        height: 300px;
+        background: rgb(255, 255, 255);
+    }
+
+    .france3{
+        width: 140px;
+        height: 300px;
+        background: rgb(219, 30, 30);
+    }
+
+  
