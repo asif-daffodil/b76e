@@ -1,0 +1,94 @@
+/* * {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, red, #734b6d);
+  /* background-color: rgba(50, 115, 220, 0.3); */
+}
+
+.calculator {
+  width: 500px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  transition: 0.25px;
+  position: absolute;
+  text-align: center;
+  line-height: 6px;
+}
+
+#display {
+  border: none;
+  background: white;
+  border-radius: 5px;
+  width: 235px;
+  height: 50px;
+  margin: auto;
+  border: 2px solid white;
+  color: black;
+}
+
+.btndesign {
+  width: 55px;
+  height: 45px;
+  padding-top: -1;
+  border: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 2px;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+.op_btn {
+  width: 55px;
+  height: 45px;
+  padding-top: -1;
+  border: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 2px;
+  border-radius: 5px;
+  background: white;
+}
+
+.op_btn:hover {
+  background: #00d9ff;
+}
+
+#zero {
+  width: 116px;
+  height: 45px;
+  padding-top: -1;
+  border: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 2px;
+  border-radius: 5px;
+  background: white;
+}
+
+.name {
+  width: 60%;
+  /* height: 50px; */
+  background: wheat;
+  border-radius: 30px;
+}
+
+.name h1 {
+  color: white;
+  margin: 300px;
+  /* margin-left: 200px;     */
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}

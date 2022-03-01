@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Roboto+Serif:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 992px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    .main>div {
+        border: 1px solid #000;
+        padding: 20px;
+        background: rgba(228, 240, 122, 0.3);
+        color: rgb(0, 0, 0);
+        font-family: 'Anton', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 12px;
+        padding: 12px;
+    }
+    .main>div {
+        border: 1px solid #000;
+        padding: 12px;
+        background: rgba(211, 250, 11, 0.3);
+        color: rgb(6, 5, 5);
+        font-family: 'Roboto Serif', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8px;
+        padding: 8px;
+    }
+    .main>div {
+        border: 1px solid #000;
+        padding: 8px;
+        background: rgba(245, 92, 3, 0.3);
+        color: rgb(0, 0, 0);
+        font-family: 'League Gothic', sans-serif;
+    }
+}
