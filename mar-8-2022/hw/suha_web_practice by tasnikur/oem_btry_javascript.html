@@ -1,0 +1,36 @@
+<script>
+	/*
+  *THIS FUNCTION CALL THE getData() FUNCTION IN THE Code.gs FILE, 
+  *AND PASS RETURNED DATA TO showData() FUNCTION
+  */
+  google.script.run.withSuccessHandler(showData).getData();
+
+  //THIS FUNCTION GENERATE THE DATA TABLE FROM THE DATA ARRAY
+  function showData(dataArray){
+    $(document).ready(function(){
+      $('#data-table').DataTable({
+        data: dataArray,
+        //CHANGE THE TABLE HEADINGS BELOW TO MATCH WITH YOUR SELECTED DATA RANGE
+        columns: [
+          {"title":"Fujitsu"},
+          {"title":"" price
+for A""},
+          {"title":""Open price
+for A+""},
+          {"title":"1413(11.09.21)	"},
+          {"title":"Showroom         (11.09.21)	"},
+          {"title":""Total stock
+11-09-21""}
+          {"title":""Showroom
+(25.10.21)"	"},
+          {"title":""1413
+(25.10.21)"	"},
+          {"title":""Total 
+stock
+25-10-21""},
+          {"title":"Upcoming-1	"}
+        ]
+      });
+    });
+  }
+</script>

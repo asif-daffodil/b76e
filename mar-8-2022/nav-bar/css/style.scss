@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin anchorTag {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px darkorange;
+}
+
+@mixin listTag {
+  list-style: none;
+  width: 100%;
+  position: relative;
+}
+
+@mixin beforeTag {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: cornflowerblue;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+
+nav {
+  margin-top: 10px;
+  width: 100%;
+  > .menu {
+    width: 750px;
+    margin: auto;
+    background: linear-gradient(black, blue);
+    text-align: center;
+    display: flex;
+    > li {
+      @include listTag;
+      > a {
+        @include anchorTag();
+      }
+      &::before {
+        @include beforeTag;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+        > .dd {
+          display: block;
+        }
+      }
+      > .dd {
+        width: 150%;
+        background: blue;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        > li {
+          @include listTag;
+          > a {
+            @include anchorTag();
+            font-size: 16px;
+          }
+          &::before {
+            @include beforeTag;
+          }
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+            > .dd2 {
+              display: block;
+            }
+          }
+          > .dd2 {
+            width: 150%;
+            background: blue;
+            position: absolute;
+            display: none;
+            top: 0%;
+            left: 100%;
+            > li {
+              @include listTag;
+              > a {
+                @include anchorTag();
+                font-size: 16px;
+              }
+              &::before {
+                @include beforeTag;
+              }
+              &:hover {
+                &::before {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

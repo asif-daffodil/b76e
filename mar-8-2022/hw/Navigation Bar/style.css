@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/2951.jpg_wh300.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+    
+    
+}
+
+.menu-bar{
+    width: 100%;
+    height: 48px;
+    background: rgba(48, 92, 27, 0.733);
+    box-shadow: 0px 5px 5px rgb(250, 249, 249);
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.menu-bar ul{
+    display: flex;
+    list-style: none;
+    padding: 7px;
+    flex-wrap: wrap;
+    
+}
+
+.menu-bar ul li{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    
+}
+
+
+.search{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    margin-left: 60px;
+    margin-bottom: 5px;
+    border: 2px black solid;
+    border-radius: 12px;
+    box-shadow: rgba(253, 253, 253, 0.664) 0px 0px 3px 3px , inset rgba(36, 34, 34, 0.356) 0px 0px 3px 3px  ;
+    background: white;
+    
+}
+
+#services{
+    background-color: rgba(25, 95, 34, 0.466);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    /* border: 2px solid white; */
+    margin-left: 20px;
+    width: 120px;
+}
+
+.Facebook{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    
+}
+
+.linkdie{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    
+}
+
+.instragram{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.youtube{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.home{
+ text-decoration: none;
+ 
+ 
+
+}
+
+
+.abour-us{
+    text-decoration: none;
+    
+ 
+   }
+   
+
+
+   .peicing{
+    text-decoration: none;
+   
+ 
+   } 
+
+   .contact{
+    text-decoration: none;
+   }
+
+ .privecy-policy{
+    text-decoration: none;
+ }
+
+.sing-up{
+    text-decoration: none;
+}
+   
+ .sing-in{
+    text-decoration: none;
+    
+ }
+
+ 
+ 
+
+ 
+ 

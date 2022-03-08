@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$bgColor: blue;
+
+@mixin commonThings($w: 100px, $h: 100px) {
+  width: $w;
+  height: $h;
+  background: $bgColor;
+  margin: 20px;
+}
+
+.bd {
+  @include commonThings(200px, 200px);
+}
+
+.dhk {
+  @include commonThings(300px, 200px);
+}
+
+.dhan {
+  @include commonThings();
+}
+
+.panthopath {
+  @extend .dhk;
+  background: red;
+}
+
+.dunia {
+  @include commonThings(300px, 300px);
+  margin: 20px auto;
+  display: flex;
+  position: relative;
+  > .prithibi {
+    @include commonThings(200px, 200px);
+    background: green;
+    margin: auto;
+    display: flex;
+    > .mohaShagor {
+      @include commonThings(100px, 100px);
+      background: red;
+      margin: auto;
+      display: flex;
+      > .bangladesh {
+        @include commonThings(50px, 50px);
+        background: black;
+        margin: auto;
+        &:hover {
+          background: cornflowerblue;
+        }
+      }
+      &:hover {
+        background: limegreen;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: teal;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+  }
+}

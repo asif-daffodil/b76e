@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  margin-top: 10px;
+  width: 100%;
+}
+
+nav > .menu {
+  width: 750px;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(blue));
+  background: linear-gradient(black, blue);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav > .menu > li {
+  list-style: none;
+  width: 100%;
+  position: relative;
+}
+
+nav > .menu > li > a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px darkorange;
+}
+
+nav > .menu > li::before {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: cornflowerblue;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+nav > .menu > li:hover::before {
+  width: 100%;
+}
+
+nav > .menu > li:hover > .dd {
+  display: block;
+}
+
+nav > .menu > li > .dd {
+  width: 150%;
+  background: blue;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+nav > .menu > li > .dd > li {
+  list-style: none;
+  width: 100%;
+  position: relative;
+}
+
+nav > .menu > li > .dd > li > a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px darkorange;
+  font-size: 16px;
+}
+
+nav > .menu > li > .dd > li::before {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: cornflowerblue;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+nav > .menu > li > .dd > li:hover::before {
+  width: 100%;
+}
+
+nav > .menu > li > .dd > li:hover > .dd2 {
+  display: block;
+}
+
+nav > .menu > li > .dd > li > .dd2 {
+  width: 150%;
+  background: blue;
+  position: absolute;
+  display: none;
+  top: 0%;
+  left: 100%;
+}
+
+nav > .menu > li > .dd > li > .dd2 > li {
+  list-style: none;
+  width: 100%;
+  position: relative;
+}
+
+nav > .menu > li > .dd > li > .dd2 > li > a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px darkorange;
+  font-size: 16px;
+}
+
+nav > .menu > li > .dd > li > .dd2 > li::before {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: cornflowerblue;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+nav > .menu > li > .dd > li > .dd2 > li:hover::before {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

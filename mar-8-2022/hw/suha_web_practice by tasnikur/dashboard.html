@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <img src="logo.png" alt="">
+      <span class="logo_name">Suha Corporation</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/190HFdXR_FiB6twQz8Bg1VhZVAMtOAC22/edit?usp=sharing&ouid=111672727360935055772&rtpof=true&sd=true">
+            <i class='bx bx-battery' ></i>
+            <span class="links_name">OEM Battery</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1G-pfeaOU5PAc78NYrvTcSRPvYBdkN2GI/edit?usp=sharing&ouid=111672727360935055772&rtpof=true&sd=true">
+            <i class='bx bxs-battery'></i>
+            <span class="links_name">Original Battery</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1yvEIXgBqjTcLFmPF1ly-1l90fZHD-cJk/edit?usp=sharing&ouid=111672727360935055772&rtpof=true&sd=true">
+            <img src="oem.png" alt="" style="height: 28px; width:30px; margin:16px;">
+            <span class="links_name">OEM Adapter</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1eEkcpBt7Fe4pHngjBymEsysBkN3NwbKY/edit?usp=sharing&ouid=111672727360935055772&rtpof=true&sd=true">
+            <img src="org.png" alt="" style="height: 28px; width:30px; margin:16px;">
+            <span class="links_name">Original Adapter</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1d8DcMSTkDdbrk3lsf_Kzu0U5GnrX6d5I/edit?usp=sharing&ouid=111672727360935055772&rtpof=true&sd=true">
+            <img src="ssd.png" alt="RAM" style="height: 27px; width:28px; margin:18px;">
+            <span class="links_name">SSD</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="ram.png" alt="RAM" style="height: 14px; width:30px; margin:16px;">
+            <span class="links_name">LA & DA RAM</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <img src="d5.jpg" alt="">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Tasnikur Tahsin</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Order</div>
+            <div class="number">400,876৳</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+          <i class='bx bx-cart-alt cart'></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Sales</div>
+            <div class="number">380,876৳</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+          <i class='bx bxs-cart-add cart two' ></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Profit</div>
+            <div class="number">120,876৳</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+          <i class='bx bx-cart cart three' ></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Return</div>
+            <div class="number">110,086৳</div>
+            <div class="indicator">
+              <i class='bx bx-down-arrow-alt down'></i>
+              <span class="text">Down From Today</span>
+            </div>
+          </div>
+          <i class='bx bxs-cart-download cart four' ></i>
+        </div>
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Recent Sales</div>
+          <div class="sales-details">
+            <ul class="details">
+              <li class="topic">Date</li>
+              <li><a href="#">02 Mar 2022</a></li>
+              <li><a href="#">02 Mar 2022</a></li>
+              <li><a href="#">02 Mar 2022</a></li>
+              <li><a href="#">02 Mar 2022</a></li>
+              <li><a href="#">02 Mar 2022</a></li>
+              <li><a href="#">02 Mar 2022</a></li>
+              <li><a href="#">02 Mar 2022</a></li>
+              <li><a href="#">02 Mar 2022</a></li>
+              <li><a href="#">02 Mar 2022</a></li>
+            </ul>
+            <ul class="details">
+            <li class="topic">Customer</li>
+            <li><a href="#">Startech Engineering LTD.</a></li>
+            <li><a href="#">Rayans LTD.</a></li>
+            <li><a href="#">Tech Land</a></li>
+            <li><a href="#">Thunder Global Tech (BD)</a></li>
+            <li><a href="#">Vital Trade International</a></li>
+            <li><a href="#">SAS Tech Engineering LTD.</a></li>
+            <li><a href="#">Panaroma Computer LTD.</a></li>
+             <li><a href="#">Micro Source International</a></li>
+             <li><a href="#">Computer Source</a></li>
+          </ul>
+          <ul class="details">
+            <li class="topic">Sales</li>
+            <li><a href="#">Delivered</a></li>
+            <li><a href="#">Pending</a></li>
+            <li><a href="#">Returned</a></li>
+            <li><a href="#">Delivered</a></li>
+            <li><a href="#">Pending</a></li>
+            <li><a href="#">Returned</a></li>
+            <li><a href="#">Delivered</a></li>
+             <li><a href="#">Pending</a></li>
+            <li><a href="#">Delivered</a></li>
+          </ul>
+          <ul class="details">
+            <li class="topic">Total</li>
+            <li><a href="#">20,498৳</a></li>
+            <li><a href="#">24,155৳</a></li>
+            <li><a href="#">25,388৳</a></li>
+            <li><a href="#">176,0666৳</a></li>
+            <li><a href="#">564,356৳</a></li>
+            <li><a href="#">48,495৳</a></li>
+            <li><a href="#">63,733৳</a></li>
+             <li><a href="#">22,353৳</a></li>
+             <li><a href="#">40,652৳</a></li>
+          </ul>
+          </div>
+          <div class="button">
+            <a href="#" style="margin: 14px;">See All</a>
+          </div>
+        </div>
+        <div class="top-sales box">
+          <div class="title">Top Seling Product</div>
+          <ul class="top-sales-details">
+            <li>
+            <a href="#">
+              <!--<img src="images/sunglasses.jpg" alt="">-->
+              <span class="product">HP HT03XL</span>
+            </a>
+            <span class="price">11907৳</span>
+          </li>
+          <li>
+            <a href="#">
+               <!--<img src="images/jeans.jpg" alt="">-->
+              <span class="product">HP TF03XL </span>
+            </a>
+            <span class="price">15677৳</span>
+          </li>
+          <li>
+            <a href="#">
+             <!-- <img src="images/nike.jpg" alt="">-->
+              <span class="product">HP WDXOR</span>
+            </a>
+            <span class="price">12634৳</span>
+          </li>
+          <li>
+            <a href="#">
+              <!--<img src="images/scarves.jpg" alt="">-->
+              <span class="product">HP CM03</span>
+            </a>
+            <span class="price">23142৳</span>
+          </li>
+          <li>
+            <a href="#">
+              <!--<img src="images/blueBag.jpg" alt="">-->
+              <span class="product">MSI SQU-566</span>
+            </a>
+            <span class="price">14506৳</span>
+          </li>
+          <li>
+            <a href="#">
+              <!--<img src="images/bag.jpg" alt="">-->
+              <span class="product">DE 4010 GB</span>
+            </a>
+            <span class="price">23445৳</span>
+          <li>
+            <a href="#">
+              <!--<img src="images/addidas.jpg" alt="">-->
+              <span class="product">DE 3451 (All Supported)</span>
+            </a>
+            <span class="price">23465৳</span>
+          </li>
+<li>
+            <a href="#">
+             <!--<img src="images/shirt.jpg" alt="">-->
+              <span class="product">DE 3521</span>
+            </a>
+            <span class="price">12454৳</span>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+
