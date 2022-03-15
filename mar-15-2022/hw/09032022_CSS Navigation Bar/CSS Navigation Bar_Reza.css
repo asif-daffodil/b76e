@@ -1,0 +1,56 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("./download.png"), auto;
+}
+
+.reza{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: brown;
+    text-align: center;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: lightgray;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.main>ul{
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    list-style: none;
+}
+.main>ul>li {
+    width: 50px;
+    /* height: 50px; */
+    border: 1px solid rgb(1, 34, 34);
+    margin: 1px;
+    background: palegreen;
+    border-radius: 20%;
+    border-color: pink;
+    border-width: 2px;
+    box-shadow: 0 0 1px green, 0 0 2px red inset;
+}
+.main>ul>li>a{
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    font-size: larger;
+    /* color: rgb(255, 80, 80); */
+    text-shadow: 0 0 1px;
+}
+
+.fa-brands fa-css3{
+    color: blue;
+}

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  /* animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+  -webkit-animation: myAnimation 2s infinite linear;
+          animation: myAnimation 2s infinite linear;
+}
+
+@-webkit-keyframes myAnimation {
+  0% {
+    margin-left: 0px;
+    margin-top: 0px;
+    background: cornflowerblue;
+    width: 200px;
+    height: 200px;
+  }
+  50% {
+    margin-left: 200px;
+    margin-top: 200px;
+    background: darkorange;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0px;
+    background: cornflowerblue;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@keyframes myAnimation {
+  0% {
+    margin-left: 0px;
+    margin-top: 0px;
+    background: cornflowerblue;
+    width: 200px;
+    height: 200px;
+  }
+  50% {
+    margin-left: 200px;
+    margin-top: 200px;
+    background: darkorange;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0px;
+    background: cornflowerblue;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.batti {
+  width: 20px;
+  height: 20px;
+  background: red;
+  -webkit-animation: BattiJole 1s infinite linear;
+          animation: BattiJole 1s infinite linear;
+  position: fixed;
+  top: 220px;
+  left: 20px;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes BattiJole {
+  0% {
+    -webkit-box-shadow: 0 0 2px orangered;
+            box-shadow: 0 0 2px orangered;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 10px orangered;
+            box-shadow: 0 0 10px orangered;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 2px orangered;
+            box-shadow: 0 0 2px orangered;
+  }
+}
+
+@keyframes BattiJole {
+  0% {
+    -webkit-box-shadow: 0 0 2px orangered;
+            box-shadow: 0 0 2px orangered;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 10px orangered;
+            box-shadow: 0 0 10px orangered;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 2px orangered;
+            box-shadow: 0 0 2px orangered;
+  }
+}
+
+.textGhurabona {
+  width: 300px;
+  height: 300px;
+  border: 8px double dodgerblue;
+  position: fixed;
+  top: 180px;
+  right: 180px;
+  -webkit-animation: tg 2s infinite linear;
+          animation: tg 2s infinite linear;
+}
+
+.textGhurabona > .text {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 72px;
+  -webkit-animation: text 2s infinite linear;
+          animation: text 2s infinite linear;
+}
+
+@-webkit-keyframes tg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes tg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes text {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
