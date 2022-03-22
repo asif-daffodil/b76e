@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: cornflowerblue;
+}
+
+h1 {
+  text-align: center;
+  color: #c56440;
+  font-size: 50px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav > .menu {
+  width: 1000px;
+  margin: 100px auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(gray), to(yellow));
+  background: linear-gradient(gray, yellow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav > .menu > li {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+
+nav > .menu > li::before {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: #64a503;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav > .menu > li:hover::before {
+  width: 100%;
+}
+
+nav > .menu > li:hover > .aa {
+  display: block;
+}
+
+nav > .menu > li:hover > .bb {
+  display: block;
+}
+
+nav > .menu > li > a {
+  text-decoration: none;
+  color: #025c19;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+  display: block;
+  letter-spacing: 1px;
+  text-shadow: 5px 5px 50px #eafa06;
+}
+
+nav > .menu > li .aa {
+  width: 150%;
+  background: lightgreen;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+nav > .menu > li .aa > li {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+
+nav > .menu > li .aa > li > .aa1 {
+  width: 150%;
+  background: #a8f7a8;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  display: none;
+}
+
+nav > .menu > li .aa > li > .aa1 > li {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+
+nav > .menu > li .aa > li > .aa1 > li > a {
+  text-decoration: none;
+  color: #025c19;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+  display: block;
+  letter-spacing: 1px;
+  text-shadow: 5px 5px 50px #eafa06;
+  font-size: 13px;
+}
+
+nav > .menu > li .aa > li::before {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: #64a503;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav > .menu > li .aa > li:hover::before {
+  width: 100%;
+}
+
+nav > .menu > li .aa > li:hover > .aa1 {
+  display: block;
+}
+
+nav > .menu > li .aa > li > a {
+  text-decoration: none;
+  color: #025c19;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+  display: block;
+  letter-spacing: 1px;
+  text-shadow: 5px 5px 50px #eafa06;
+  font-size: 16px;
+}
+
+nav > .menu > li .bb {
+  width: 150%;
+  background: lightgreen;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+nav > .menu > li .bb > li {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+
+nav > .menu > li .bb > li > .bb1 {
+  width: 100%;
+  background: #a8f7a8;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  display: none;
+}
+
+nav > .menu > li .bb > li > .bb1 > li {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+
+nav > .menu > li .bb > li > .bb1 > li > a {
+  text-decoration: none;
+  color: #025c19;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+  display: block;
+  letter-spacing: 1px;
+  text-shadow: 5px 5px 50px #eafa06;
+  font-size: 13px;
+}
+
+nav > .menu > li .bb > li::before {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: #64a503;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav > .menu > li .bb > li:hover::before {
+  width: 100%;
+}
+
+nav > .menu > li .bb > li:hover > .bb1 {
+  display: block;
+}
+
+nav > .menu > li .bb > li > a {
+  text-decoration: none;
+  color: #025c19;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+  display: block;
+  letter-spacing: 1px;
+  text-shadow: 5px 5px 50px #eafa06;
+  font-size: 16px;
+}
+/*# sourceMappingURL=19032022.css.map */

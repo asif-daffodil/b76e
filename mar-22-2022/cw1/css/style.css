@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Oswald";
+}
+
+.container {
+  width: 1020px;
+  margin: auto;
+}
+
+.container > .top-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container > .top-header > div {
+  width: 100%;
+  font-size: 14px;
+  line-height: 32px;
+  background-color: #ccc;
+  padding: 0 10px;
+}
+
+.container > .top-header > div span {
+  font-weight: bold;
+}
+
+.container > .top-header > div:nth-child(2) {
+  text-align: right;
+}
+
+.container > .main-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  padding: 20px 0;
+  background: #e9e9e9;
+}
+
+.container > .main-header > div {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.container > .main-header > div > img {
+  max-width: 180px;
+}
+
+.container > .main-header > div > form {
+  margin-left: auto;
+  width: 80%;
+  background: red;
+  position: relative;
+}
+
+.container > .main-header > div > form > input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+}
+
+.container > .main-header > div > form > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.container > nav {
+  width: 100%;
+  background: #ccc;
+  position: relative;
+  z-index: 10;
+}
+
+.container > nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container > nav > ul li {
+  list-style: none;
+  border-right: 2px solid #858585;
+  min-width: 150px;
+}
+
+.container > nav > ul li a {
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.container > nav > ul li:last-child {
+  border-right-width: 0;
+}
+
+.container > nav > ul li:hover {
+  background: #858585;
+}
+
+.container > nav > ul li:hover > a {
+  color: #fff;
+  font-weight: 400;
+}
+
+.container > nav > ul li:hover > .mega {
+  display: -ms-grid;
+  display: grid;
+}
+
+.container > nav > ul li > .mega {
+  width: 100%;
+  display: none;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  background: #858585;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.container > nav > ul li > .mega > ul li:nth-child(1) > a {
+  font-weight: 400;
+}
+
+.container > nav > ul li > .mega > ul li > a {
+  color: #fff;
+}
+
+.container > .banner {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.container > .banner > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container > .banner > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 48px;
+  color: #fff;
+  letter-spacing: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+
+.container > .banner > div > div {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container > .banner > div > div:nth-child(2) {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.container > .ourTeam {
+  margin-top: 40px;
+}
+
+.container > .ourTeam > h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.container > .ourTeam > .team {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container > .ourTeam > .team > div {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 6px #ccc;
+          box-shadow: 0 0 6px #ccc;
+}
+
+.container > .ourTeam > .team > div > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 6px;
+  display: block;
+  margin: auto;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.container > .ourTeam > .team > div > h2 {
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.container > .ourTeam > .team > div > p {
+  font-style: italic;
+  color: #3a3a3a;
+  font-weight: 300;
+}
+
+.container > .ourTeam > .team > div > button {
+  padding: 8px 16px;
+  border-width: 0;
+  margin: 10px 0;
+  background: #3a3a3a;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container > .blogPost {
+  margin-top: 40px;
+  padding: 10px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.container > .blogPost > h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.container > .blogPost > .postItem {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
+
+.container > .blogPost > .postItem div img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container > .blogPost > .postItem div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container > .blogPost > .postItem div:nth-child(1) > h2 {
+  font-size: 32px;
+}
+
+.container > .blogPost > .postItem div:nth-child(1) > article {
+  color: #3a3a3a;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: -4px;
+  margin-bottom: 20px;
+}
+
+.container > .blogPost > .postItem div:nth-child(1) > p {
+  letter-spacing: 1px;
+}
+
+.container > .blogPost > .postItem div:nth-child(1) > button {
+  display: block;
+  width: 150px;
+  margin-top: 20px;
+  border-width: 0;
+  padding: 12px;
+  color: #fff;
+  background: #3a3a3a;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container > .clients {
+  margin-top: 40px;
+  padding: 10px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.container > .clients > h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.container > .clients > div {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container > .clients > div img {
+  height: 60px;
+}
+/*# sourceMappingURL=style.css.map */

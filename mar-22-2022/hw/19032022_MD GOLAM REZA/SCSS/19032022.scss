@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: cornflowerblue;
+}
+h1{
+    text-align: center;
+    color: rgb(197, 100, 64);
+    font-size: 50px;
+}
+
+@mixin anchortag {
+    text-decoration: none;
+    color: rgb(2, 92, 25);
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 20px;
+    display: block;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 50px rgb(234, 250, 6);
+}
+@mixin listtag {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    position: relative;
+}
+@mixin beforetag {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: rgb(100, 165, 3);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    transition: 0.5s;
+}
+
+nav{
+    width: 100%;
+    >.menu{
+        width: 1000px;
+        margin: 100px auto;
+        background: linear-gradient(gray, yellow);
+        display: flex;
+        >li{
+            @include listtag();
+            &::before{
+                @include beforetag();
+            }
+            &:hover{
+                &::before{
+                    width: 100%;
+                }
+                >.aa{
+                    display: block;
+                }
+                >.bb{
+                    display: block;
+                }
+            }
+            >a{
+                @include anchortag();
+            }
+            .aa{
+                width: 150%;
+                background: lightgreen;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+                >li{
+                    @include listtag();
+                    >.aa1{
+                        width: 150%;
+                        background: rgb(168, 247, 168);
+                        position: absolute;
+                        top: 0%;
+                        left: 100%;
+                        display: none;
+                        >li{
+                            @include listtag();
+                            >a{
+                                @include anchortag();
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    &::before{
+                        @include beforetag();
+                    }
+                    &:hover{
+                        &::before{
+                            width: 100%;
+                        }
+                        >.aa1{
+                            display: block;
+                        }
+                    }
+                    >a{
+                        @include anchortag();
+                        font-size: 16px;
+                    }
+                }
+            }
+            .bb{
+                width: 150%;
+                background: lightgreen;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+                >li{
+                    @include listtag();
+                    >.bb1{
+                        width: 100%;
+                        background: rgb(168, 247, 168);
+                        position: absolute;
+                        top: 0%;
+                        left: 100%;
+                        display: none;
+                        >li{
+                            @include listtag();
+                            >a{
+                                @include anchortag();
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    &::before{
+                        @include beforetag();
+                    }
+                    &:hover{
+                        &::before{
+                            width: 100%;
+                        }
+                        >.bb1{
+                            display: block;
+                        }
+                    }
+                    >a{
+                        @include anchortag();
+                        font-size: 16px;
+                    }
+                }
+            }
+                
+        }
+    }
+}
