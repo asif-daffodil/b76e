@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <style>
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.8);
+      }
+      .carousel-indicators [data-bs-target] {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+      nav {
+        background: rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav bar started -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light position-absolute top-0 left-0 w-100"
+      style="z-index: 10"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/b/b6/Lumen_Technologies_Logo.png"
+            alt=""
+            class="img-fluid"
+            style="max-width: 150px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                My Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control border-primary"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+              <span
+                class="input-group-text bg-primary border-primary text-white btn"
+                id="basic-addon1"
+              >
+                <i class="bi bi-search"></i>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bar ended -->
+    <!-- carousel start -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://s3.eu-west-2.amazonaws.com/assets.theriverstrust.org/Images/_1800x700_crop_center-center_60_line/Leaky-Dam-NFM.jpg"
+            class="d-block img-fluid min-vh-100"
+            style="object-fit: cover"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cdn.ecommercedns.uk/files/2/208762/8/4157908/header-forest2.jpg"
+            class="d-block img-fluid min-vh-100"
+            style="object-fit: cover"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://jerrytanzaniatours.com/images/kikuletwa-hotsprings-banner.jpg"
+            class="d-block img-fluid min-vh-100"
+            alt="..."
+            style="object-fit: cover"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="http://villasdelpalmar.com/images/1.jpg"
+            class="d-block img-fluid min-vh-100"
+            style="object-fit: cover"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Forth slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel end -->
+    <div class="container">
+      <div class="row min-vh-100 d-flex">
+        <div
+          class="col-md-12 display-4 text-center border-0 border-bottom mt-auto pb-4"
+        >
+          About Us
+        </div>
+        <div class="col-md-12 mb-auto mt-4">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://i.pinimg.com/originals/a5/d5/90/a5d5907b44cdbcf3691ecb54016979a3.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-8">
+              <h2>Our History and motivation</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                iure nisi voluptates non labore reiciendis molestias tempora
+                quas veritatis animi accusamus harum aliquid iusto earum
+                mollitia minus quod recusandae est tenetur omnis error
+                necessitatibus, delectus ipsa. Odio tempora doloremque
+                recusandae, saepe vel nobis harum asperiores alias sequi porro
+                inventore at? Deserunt eligendi ea numquam, optio illo tempore
+                laborum maxime ut?
+              </p>
+              <button class="btn btn-dark">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row min-vh-100">
+        <div class="col-md-12 text-center display-4">Our Team</div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4 p-4">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    src="https://dlg7f0e93aole.cloudfront.net/wp-content/uploads/ian-read-pfizer.jpg"
+                    alt=""
+                    class="card-img-top img-flid img-thumbnail p-2"
+                  />
+                  <div class="card-title fs-3 px-2">
+                    Mr. Abdul
+                    <span class="card-subtitle fs-5">(CEO)</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="px-2 mb-0">
+                    Lorem ipsum dolor sit, amet. nemo quod! Fuga sequi,
+                    consectetur, sunt nostrum, harum impedit? Ut, expedita
+                    repella rerum, ea labore!
+                  </p>
+                  <div
+                    class="d-flex justify-content-end align-items-center px-2"
+                  >
+                    <i class="bi bi-arrow-right"></i>
+                    <button class="btn btn-link px-0">Read more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 p-4">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    src="https://newsroom.bankofamerica.com/content/dam/newsroom/exec-bios/head-shots/Brian%20Moynihan.jpg"
+                    alt=""
+                    class="card-img-top img-flid img-thumbnail p-2"
+                  />
+                  <div class="card-title fs-3 px-2">
+                    Mr. babdul
+                    <span class="card-subtitle fs-5">(Owner)</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="px-2 mb-0">
+                    Lorem ipsum dolor sit, amet. nemo quod! Fuga sequi,
+                    consectetur, sunt nostrum, harum impedit? Ut, expedita
+                    repella rerum, ea labore!
+                  </p>
+                  <div
+                    class="d-flex justify-content-end align-items-center px-2"
+                  >
+                    <i class="bi bi-arrow-right"></i>
+                    <button class="btn btn-link px-0">Read more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 p-4">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    src="https://blog.leaseweb.com/uploads/2018/07/Con-Z.jpg"
+                    alt=""
+                    class="card-img-top img-flid img-thumbnail p-2"
+                  />
+                  <div class="card-title fs-3 px-2">
+                    Mr. Kabdul
+                    <span class="card-subtitle fs-5">(Pion)</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="px-2 mb-0">
+                    Lorem ipsum dolor sit, amet. nemo quod! Fuga sequi,
+                    consectetur, sunt nostrum, harum impedit? Ut, expedita
+                    repella rerum, ea labore!
+                  </p>
+                  <div
+                    class="d-flex justify-content-end align-items-center px-2"
+                  >
+                    <i class="bi bi-arrow-right"></i>
+                    <button class="btn btn-link px-0">Read more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row min-vh-100 d-flex">
+        <div class="col-md-12 display-4 text-center mt-auto border-bottom pb-3">
+          <span class="text-danger">More</span> About Us
+        </div>
+        <div class="col-md-12 mb-auto mt-3">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="display-6">Our Branches</h2>
+              <table class="table table-striped table-light table-hover">
+                <tr>
+                  <th>S.N.</th>
+                  <th>Branch Name</th>
+                  <th>Address</th>
+                </tr>
+                <tr>
+                  <td>01</td>
+                  <td>Kalabagan</td>
+                  <td>Panthapath, Kalabagan</td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>Dhanmondi</td>
+                  <td>Dhanmondi, Dhaka</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>Mohammadpur</td>
+                  <td>Mohammadpur, Dhanmondi</td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>Jigatola</td>
+                  <td>Jigatola, Dhanmondi</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-6">
+              <h2 class="display-6">Our Skills</h2>
+              <label>HTML</label>
+              <div class="progress mb-2">
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated"
+                  style="width: 90%"
+                >
+                  90%
+                </div>
+              </div>
+              <label>CSS</label>
+              <div class="progress mb-2">
+                <div
+                  class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                  style="width: 80%"
+                >
+                  80%
+                </div>
+              </div>
+              <label>Bootstrap</label>
+              <div class="progress mb-2">
+                <div
+                  class="progress-bar progress-bar-striped bg-info progress-bar-animated"
+                  style="width: 85%"
+                >
+                  85%
+                </div>
+              </div>
+              <label>JavaScript</label>
+              <div class="progress mb-2">
+                <div
+                  class="progress-bar progress-bar-striped bg-dark progress-bar-animated"
+                  style="width: 40%"
+                >
+                  40%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row min-vh-100 d-flex">
+        <div class="col-md-12 display-4 text-center mt-auto border-bottom pb-3">
+          F.A.Q
+        </div>
+        <div class="col-md-12 mb-auto mt-3">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      What is the company name?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Our company name is 'I dont know'. this is the most
+                      popular company in the world. Ha ha ha. Our company name
+                      is 'I dont know'. this is the most popular company in the
+                      world. Ha ha ha. Our company name is 'I dont know'. this
+                      is the most popular company in the world. Ha ha ha. Our
+                      company name is 'I dont know'. this is the most popular
+                      company in the world. Ha ha ha.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      What is the company name?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Our company name is 'I dont know'. this is the most
+                      popular company in the world. Ha ha ha. Our company name
+                      is 'I dont know'. this is the most popular company in the
+                      world. Ha ha ha. Our company name is 'I dont know'. this
+                      is the most popular company in the world. Ha ha ha. Our
+                      company name is 'I dont know'. this is the most popular
+                      company in the world. Ha ha ha.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      What is the company name?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Our company name is 'I dont know'. this is the most
+                      popular company in the world. Ha ha ha. Our company name
+                      is 'I dont know'. this is the most popular company in the
+                      world. Ha ha ha. Our company name is 'I dont know'. this
+                      is the most popular company in the world. Ha ha ha. Our
+                      company name is 'I dont know'. this is the most popular
+                      company in the world. Ha ha ha.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h2 class="display-4 mb-4">Send Message</h2>
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="form-control mb-3"
+              />
+              <textarea
+                placeholder="Your Message"
+                class="form-control mb-3"
+              ></textarea>
+              <input type="submit" value="Sene" class="btn btn-dark" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark text-white py-4 text-center">
+      copyright &copy; 2022 | Asif Abir | All Rights Reserved
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -6,6 +6,17 @@
   font-family: "Oswald";
 }
 
+@mixin h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 300;
+}
+@mixin section {
+  margin-top: 40px;
+  padding: 10px;
+  border-top: 1px solid rgb(233, 233, 233);
+}
+
 .container {
   width: 1020px;
   margin: auto;
@@ -157,9 +168,7 @@
   > .ourTeam {
     margin-top: 40px;
     > h2 {
-      text-align: center;
-      font-size: 48px;
-      font-weight: 300;
+      @include h2();
     }
     > .team {
       display: grid;
@@ -204,13 +213,9 @@
     }
   }
   > .blogPost {
-    margin-top: 40px;
-    padding: 10px;
-    border-top: 1px solid rgb(233, 233, 233);
+    @include section();
     > h2 {
-      text-align: center;
-      font-size: 48px;
-      font-weight: 300;
+      @include h2();
     }
     > .postItem {
       width: 100%;
@@ -256,13 +261,9 @@
     }
   }
   > .clients {
-    margin-top: 40px;
-    padding: 10px;
-    border-top: 1px solid rgb(233, 233, 233);
+    @include section();
     > h2 {
-      text-align: center;
-      font-size: 48px;
-      font-weight: 300;
+      @include h2();
     }
     > div {
       margin-top: 20px;
@@ -273,4 +274,169 @@
       }
     }
   }
+  .contact {
+    @include section();
+    > h2 {
+      @include h2();
+    }
+    > div {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      margin-top: 40px;
+      > div {
+        form {
+          input,
+          textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: none;
+            background: rgb(250, 250, 250);
+            color: #030303;
+            font-size: 18px;
+            border-radius: 8px;
+            box-shadow: 0 0 6px #000;
+            &::placeholder {
+              color: #ccc;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          button {
+            padding: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: none;
+            background: #000;
+            color: #fff;
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 2px #ccc;
+            &:hover {
+              background: #4d4d4d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  background-color: #4d4d4d;
+  color: #fff;
+  width: 100%;
+  > .container {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    > .footerLeft {
+      > h3 {
+        font-weight: 300;
+        text-decoration: underline;
+        margin-bottom: 12px;
+      }
+      > .footerOneList {
+        list-style: none;
+        padding-right: 80px;
+        > li {
+          a {
+            text-decoration: none;
+            color: rgb(200, 200, 200);
+            font-weight: 200;
+            display: block;
+            line-height: 32px;
+            border-bottom: 1px solid #ccc;
+            padding: 0 16px;
+          }
+          &:hover {
+            background: #030303;
+          }
+        }
+      }
+    }
+    > .footerMiddle {
+      > h3 {
+        font-weight: 300;
+        text-decoration: underline;
+        margin-bottom: 12px;
+      }
+      > .footerTwoList {
+        list-style: none;
+        > li {
+          a {
+            text-decoration: none;
+            color: rgb(200, 200, 200);
+            font-weight: 200;
+            display: block;
+            line-height: 32px;
+          }
+          &:hover {
+            background: #030303;
+          }
+        }
+      }
+    }
+    > .fooetrRight {
+      > h3 {
+        font-weight: 300;
+        text-decoration: underline;
+        margin-bottom: 12px;
+      }
+      > .socialLinks {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        > li {
+          width: 50px;
+          margin: 0 8px;
+          border: 1px solid #ccc;
+          border-radius: 50%;
+          > a {
+            display: block;
+            text-decoration: none;
+            line-height: 50px;
+            font-size: 22px;
+            text-align: center;
+            color: #ccc;
+          }
+          &:hover {
+            background: #ccc;
+            > a {
+              color: #4d4d4d;
+            }
+          }
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+        }
+      }
+      > .socialImages {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        > li {
+          padding-right: 8px;
+          > img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 0;
 }

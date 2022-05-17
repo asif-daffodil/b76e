@@ -350,4 +350,217 @@
 .container > .clients > div img {
   height: 60px;
 }
+
+.container .contact {
+  margin-top: 40px;
+  padding: 10px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.container .contact > h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.container .contact > div {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.container .contact > div > div form input,
+.container .contact > div > div form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: none;
+  background: #fafafa;
+  color: #030303;
+  font-size: 18px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 6px #000;
+          box-shadow: 0 0 6px #000;
+}
+
+.container .contact > div > div form input::-webkit-input-placeholder,
+.container .contact > div > div form textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.container .contact > div > div form input:-ms-input-placeholder,
+.container .contact > div > div form textarea:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.container .contact > div > div form input::-ms-input-placeholder,
+.container .contact > div > div form textarea::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.container .contact > div > div form input::placeholder,
+.container .contact > div > div form textarea::placeholder {
+  color: #ccc;
+}
+
+.container .contact > div > div form input:focus,
+.container .contact > div > div form textarea:focus {
+  outline: none;
+}
+
+.container .contact > div > div form button {
+  padding: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  background: #000;
+  color: #fff;
+  width: 150px;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 2px #ccc;
+          box-shadow: 2px 2px 2px #ccc;
+}
+
+.container .contact > div > div form button:hover {
+  background: #4d4d4d;
+}
+
+.footer {
+  background-color: #4d4d4d;
+  color: #fff;
+  width: 100%;
+}
+
+.footer > .container {
+  padding: 30px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.footer > .container > .footerLeft > h3 {
+  font-weight: 300;
+  text-decoration: underline;
+  margin-bottom: 12px;
+}
+
+.footer > .container > .footerLeft > .footerOneList {
+  list-style: none;
+  padding-right: 80px;
+}
+
+.footer > .container > .footerLeft > .footerOneList > li a {
+  text-decoration: none;
+  color: #c8c8c8;
+  font-weight: 200;
+  display: block;
+  line-height: 32px;
+  border-bottom: 1px solid #ccc;
+  padding: 0 16px;
+}
+
+.footer > .container > .footerLeft > .footerOneList > li:hover {
+  background: #030303;
+}
+
+.footer > .container > .footerMiddle > h3 {
+  font-weight: 300;
+  text-decoration: underline;
+  margin-bottom: 12px;
+}
+
+.footer > .container > .footerMiddle > .footerTwoList {
+  list-style: none;
+}
+
+.footer > .container > .footerMiddle > .footerTwoList > li a {
+  text-decoration: none;
+  color: #c8c8c8;
+  font-weight: 200;
+  display: block;
+  line-height: 32px;
+}
+
+.footer > .container > .footerMiddle > .footerTwoList > li:hover {
+  background: #030303;
+}
+
+.footer > .container > .fooetrRight > h3 {
+  font-weight: 300;
+  text-decoration: underline;
+  margin-bottom: 12px;
+}
+
+.footer > .container > .fooetrRight > .socialLinks {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.footer > .container > .fooetrRight > .socialLinks > li {
+  width: 50px;
+  margin: 0 8px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.footer > .container > .fooetrRight > .socialLinks > li > a {
+  display: block;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 22px;
+  text-align: center;
+  color: #ccc;
+}
+
+.footer > .container > .fooetrRight > .socialLinks > li:hover {
+  background: #ccc;
+}
+
+.footer > .container > .fooetrRight > .socialLinks > li:hover > a {
+  color: #4d4d4d;
+}
+
+.footer > .container > .fooetrRight > .socialLinks > li:nth-child(1) {
+  margin-left: 0;
+}
+
+.footer > .container > .fooetrRight > .socialImages {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer > .container > .fooetrRight > .socialImages > li {
+  padding-right: 8px;
+}
+
+.footer > .container > .fooetrRight > .socialImages > li > img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 0;
+}
 /*# sourceMappingURL=style.css.map */
