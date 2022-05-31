@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  margin: 20px;
+  display: flex;
+  > form {
+    > #name {
+      width: 350px;
+      line-height: 40px;
+      border-width: 0;
+      background: #cfcfcf;
+      border-radius: 6px;
+      box-shadow: 3px 3px 3px #000;
+      padding-left: 12px;
+      font-size: 20px;
+      margin-right: 16px;
+      &:focus {
+        outline: none;
+      }
+    }
+    > #btn {
+      width: 150px;
+      height: 40px;
+      border-width: 0;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 3px 3px 3px #000;
+    }
+  }
+}
+
+#showtext {
+  margin: 0 20px;
+  padding-left: 12px;
+  font-size: 32px;
+}
